@@ -106,7 +106,7 @@ EOM
 	}
 
 	# check if gpg is installed (for Mail::Ezmlm::GpgKeyRing)
-	$gpg_bin_requested = prompt('Is gnupg installed (for keyring support in encrypted mailing lists)? (y/N)', "n");
+	$gpg_bin_requested = prompt('Is gnupg installed (for keyring support in encrypted mailing lists)? (y/N)', "y");
 	$gpg_bin_requested = ($gpg_bin_requested =~ /^y/i);
 	if ($gpg_bin_requested) {
 		undef $gpg_bin;
